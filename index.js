@@ -11,11 +11,38 @@ app.set('view engine', 'hbs');
 
 app.use(express.static(__dirname + '/public'));
 
+
+//Generamos los partials
+hbs.registerPartials(__dirname + '/views/partials');
+
 //configurar rutas
 app.get('/', (req, res)=>{
     res.render('index');
 
 });
+
+app.get('/', (req, res)=>{
+    res.render('goya');
+
+});
+
+app.get('/', (req, res)=>{
+    res.render('resendi');
+
+});
+
+app.get('/', (req, res)=>{
+    res.render('velazquez');
+
+});
+
+app.get('/', (req, res)=>{
+    res.render('vermeer');
+
+});
+
+
+
 
 
 
