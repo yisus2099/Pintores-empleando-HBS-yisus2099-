@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/yisus2099/Pintores-empleando-HBS-yisus2099-/issues"
   },
-  "homepage": "https://github.com/yisus2099/Pintores-empleando-HBS-yisus2099-#readme"
+  "homepage": "https://github.com/yisus2099/Pintores-empleando-HBS-yisus2099-#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-hbs": "^2.3.3",
+    "hbs": "^4.1.1"
+  }
 }
