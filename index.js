@@ -21,29 +21,25 @@ app.get('/', (req, res)=>{
 
 });
 
-app.get('/', (req, res)=>{
+app.get('/goya', (req, res)=>{
     res.render('goya');
 
 });
 
-app.get('/', (req, res)=>{
-    res.render('resendi');
+app.get('/ressendi', (req, res)=>{
+    res.render('ressendi');
 
 });
 
-app.get('/', (req, res)=>{
+app.get('/velazquez', (req, res)=>{
     res.render('velazquez');
 
 });
 
-app.get('/', (req, res)=>{
+app.get('/vermeer', (req, res)=>{
     res.render('vermeer');
 
 });
-
-
-
-
 
 
 //Arrancamos servidor
