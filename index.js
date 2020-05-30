@@ -9,7 +9,15 @@ const app = express();
 //Vamos a a emplear modelo vista controlador
 app.set('view engine', 'hbs');
 
-app.use(express.static(__dirname +'/public'));
+aapp.use(express.static(__dirname + '/public'));
+
+//configurar rutas
+app.get('/', (req, res)=>{
+    res.render('index');
+
+});
+
+
 
 //Arrancamos servidor
 app.listen(3000, ()=>{
