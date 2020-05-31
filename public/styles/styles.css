@@ -25,3 +25,17 @@ img{
 .imagenes h2{
     text-align: center;
 }
+
+
+body{
+    background-image: url(louvre.jpg);
+    }
+    .titulo h1{
+        font-size: 500%;
+         text-align: center;
+         color: rgb(223, 220, 59);
+    }
+    .titulo h1:hover{
+        color: rgb(0, 0, 0);
+            transition: all .3s;
+    }
