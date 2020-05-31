@@ -13,7 +13,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 //Generamos los partials
-hbs.registerPartials(__dirname + '/views/partials');
+hbs.registerPartials(__dirname + '/views/partials/');
 
 //configurar rutas
 app.get('/', (req, res)=>{
@@ -35,11 +35,13 @@ app.get('/velazquez', (req, res)=>{
     res.render('velazquez');
 
 });
-
 app.get('/vermeer', (req, res)=>{
     res.render('vermeer');
 
 });
+
+
+
 
 
 //Arrancamos servidor
