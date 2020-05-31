@@ -17,26 +17,46 @@ hbs.registerPartials(__dirname + '/views/partials/');
 
 //configurar rutas
 app.get('/', (req, res)=>{
-    res.render('index');
+    res.render('index', {
+        utor : 'Jesús Alejandro Torres Ramírez',
+        year : new Date().getFullYear(),
+        title : 'Inicio'
+    });
 
 });
 
 app.get('/goya', (req, res)=>{
-    res.render('goya');
+    res.render('goya', {
+        autor : 'Jesús Alejandro Torres Ramírez',
+        year : new Date().getFullYear(),
+        title : 'Goya'
+    });
 
 });
 
 app.get('/ressendi', (req, res)=>{
-    res.render('ressendi');
+    res.render('ressendi', {
+        autor : 'Jesús Alejandro Torres Ramírez',
+        year : new Date().getFullYear(),
+        title : 'Ressendi'
+    });
 
 });
 
 app.get('/velazquez', (req, res)=>{
-    res.render('velazquez');
+    res.render('velazquez', {
+        autor : 'Jesús Alejandro Torres Ramírez',
+        year : new Date().getFullYear(),
+        title: 'Velazquez'
+    });
 
 });
 app.get('/vermeer', (req, res)=>{
-    res.render('vermeer');
+    res.render('vermeer', {
+        autor : 'Jesús Alejandro Torres Ramírez',
+        year : new Date().getFullYear(),
+        title:'Veermer'
+    });
 
 });
 

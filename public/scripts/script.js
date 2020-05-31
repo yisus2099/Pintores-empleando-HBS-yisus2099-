@@ -1,0 +1,1 @@
+alert('Bienvenidos, ahora veran mis 4 pintores favoritos');
